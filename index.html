@@ -9,117 +9,97 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Facebook</title>
   </head>
   <body>
     <header>
-      <div class="facebook-container">
-        <div class="facebook-brand container-item1">
-          <div class="header-collection">
-            <div class="facebook-logo">
+      <div class="facebook-brand header-collection" id="container-item1">
+        <img
+          src="./images/facebook_2.png"
+          width="40px"
+          height="40px"
+          alt="img1"
+        />
+        <div class="searchInput">
+          <div class="icon-container">
+            <a href="#">
               <img
-                src="./images/facebook_2.png"
+                src="./images/search.svg"
+                alt=""
+                width="35px"
+                height="20px"
+              />
+            </a>
+          </div>
+          <div class="search-input-container">
+            <input
+              type="search"
+              id="facebook-search"
+              placeholder="Search Facebook"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="navbar" id="container-item2">
+        <ul class="nav">
+          <li>
+            <a href="#">
+              <img src="./images/home.png" alt="" class="nav-img" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/home.png" alt="" class="nav-img" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/home.png" alt="" class="nav-img" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/home.png" alt="" class="nav-img" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./images/home.png" alt="" class="nav-img" />
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav-links" id="container-item3">
+        <div class="nav-link">
+          <li>
+            <a href="#"
+              ><div class="style-icon">
+                <span class="fa-solid fa-bars fa-lg"></span></div
+            ></a>
+          </li>
+          <li>
+            <a href="#"
+              ><div class="style-icon">
+                <span class="fa-brands fa-facebook-messenger fa-lg"></span></div
+            ></a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="style-icon">
+                <span class="fa-solid fa-bell"></span></div
+            ></a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                src="./images/img2 (5).jpg"
                 width="40px"
                 height="40px"
+                class="my-profile-images img"
                 alt="img1"
-              />
-            </div>
-
-            <div class="searchInput">
-              <div class="search-input-icon-container">
-                <span class="fa-solid fa-magnifying-glass"></span>
-              </div>
-              <div class="search-input-container">
-                <input
-                  type="search"
-                  id="facebook-search"
-                  placeholder="Search Facebook"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="navbar container-item2">
-          <div class="nav">
-            <div class="facebook-nav-list">
-              <li>
-                <a href="#"
-                  ><div class="facebook-nav-icon">
-                    <span class="fa-solid fa-house fa-lg"></span></div
-                ></a>
-              </li>
-            </div>
-            <div class="facebook-nav-list">
-              <li>
-                <a href="#">
-                  <div class="facebook-nav-icon">
-                    <span
-                      class="fa-solid fa-television fa-lg"
-                      aria-hidden="true"
-                    ></span></div
-                ></a>
-              </li>
-            </div>
-            <div class="facebook-nav-list">
-              <li>
-                <a href="#">
-                  <div class="facebook-nav-icon">
-                    <span class="fa-light fa-solid fa-shop fa-lg"></span></div
-                ></a>
-              </li>
-            </div>
-            <div class="facebook-nav-list">
-              <li>
-                <a href="#"
-                  ><div class="facebook-nav-icon">
-                    <span class="fa-solid fa-house fa-lg"></span></div
-                ></a>
-              </li>
-            </div>
-            <div class="facebook-nav-list">
-              <li>
-                <a href="#"
-                  ><div class="facebook-nav-icon">
-                    <span class="fa-solid fa-gamepad fa-lg"></span></div
-                ></a>
-              </li>
-            </div>
-          </div>
-        </div>
-
-        <div class="nav-links container-item3">
-          <div class="nav-link">
-            <li>
-              <a href="#"
-                ><div class="style-icon">
-                  <span class="fa-solid fa-bars fa-lg"></span></div
-              ></a>
-            </li>
-            <li>
-              <a href="#"
-                ><div class="style-icon">
-                  <span
-                    class="fa-brands fa-facebook-messenger fa-lg"
-                  ></span></div
-              ></a>
-            </li>
-            <li>
-              <a href="#">
-                <div class="style-icon">
-                  <span class="fa-solid fa-bell"></span></div
-              ></a>
-            </li>
-            <li>
-              <a href="#">
-                <img
-                  src="./images/img2 (5).jpg"
-                  width="40px"
-                  height="40px"
-                  class="my-profile-images img"
-                  alt="img1"
-              /></a>
-            </li>
-          </div>
+            /></a>
+          </li>
         </div>
       </div>
     </header>
@@ -152,48 +132,47 @@
         </div>
 
         <!--  The newsfeed contain 3 segments -->
-        <div class="flex-item2">
-          <div class="newsfeed">
-            <section>
-              <div class="stories">
-                  <div class="story-list">
-                    <div class="story-container">
-                      <div class="hide-background">
-                        <li class="story-link">
-                          <button class="btn-story-link">
-                            <!-- an icon comes here <i></i> -->
-                            Stories
-                          </button>
-                        </li>
-                      </div>
-                    </div>
-                    <div class="story-container">
-                      <div class="hide-background">
-                        <li class="story-link">
-                          <button class="btn-story-link">
-                            <!-- an icon comes here <i></i> -->
-                            Reels
-                          </button>
-                        </li>
-                      </div>
-                    </div>
-                    <div class="story-container">
-                      <div class="hide-background">
-                        <li class="story-link">
-                          <button class="btn-story-link">
-                            <!-- an icon comes here  <i></i> -->
-                            Rooms
-                          </button>
-                        </li>
-                      </div>
-                    </div>
+        <div class="flex-item2 newsfeed">
+          <section>
+            <div class="stories">
+              <div class="story-list">
+                <div class="story-container">
+                  <div class="hide-background">
+                    <li class="story-link">
+                      <button class="btn-story-link">
+                        <!-- an icon comes here <i></i> -->
+                        Stories
+                      </button>
+                    </li>
                   </div>
-                <hr />
-                <!-- <div class="storyLinks"></div> -->
-                <div class="story-videos-list">
-                  <!-- Status.js output what statusses come in  -->
+                </div>
+                <div class="story-container">
+                  <div class="hide-background">
+                    <li class="story-link">
+                      <button class="btn-story-link">
+                        <!-- an icon comes here <i></i> -->
+                        Reels
+                      </button>
+                    </li>
+                  </div>
+                </div>
+                <div class="story-container">
+                  <div class="hide-background">
+                    <li class="story-link">
+                      <button class="btn-story-link">
+                        <!-- an icon comes here  <i></i> -->
+                        Rooms
+                      </button>
+                    </li>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <!-- <div class="storyLinks"></div> -->
+              <div class="story-videos-list">
+                <!-- Status.js output what statusses come in  -->
 
-                    <!--                   
+                <!--                   
                   <div class="story-video-container">
                     <div class="story-videos">
                       <a href="#">
@@ -206,66 +185,66 @@
                       ></a>
                     </div>
                   </div> -->
-                </div>
               </div>
-            </section>
-            <!-- What is on your mind 
+            </div>
+          </section>
+          <!-- What is on your mind 
             with input , posts and profile  -->
 
-            <section>
-              <div class="yourMind">
-                <div class="my-profile-input">
-                  <div class="my-profile">
-                    <a href="#">
-                      <img
-                        src="./images/img2 (5).jpg"
-                        width="50px"
-                        height="50px"
-                        class="my-profile-images img"
-                        alt="img1"
-                      />
-                    </a>
-                  </div>
-                  <div my-mind>
-                    <input
-                      type="text"
-                      placeholder="What is on your mind, user?"
-                      class="my-mind-input"
+          <section>
+            <div class="yourMind">
+              <div class="my-profile-input">
+                <div class="my-profile">
+                  <a href="#">
+                    <img
+                      src="./images/img2 (5).jpg"
+                      width="50px"
+                      height="50px"
+                      class="my-profile-images img"
+                      alt="img1"
                     />
-                  </div>
+                  </a>
                 </div>
-                <hr />
-                <div class="myStoryTypes">
-                  <div class="story-type">
-                    <button class="btn-my-mind">
-                      <a href="#" class="link-my-mind">
-                        <i></i>
-                        <p>Live video</p>
-                      </a>
-                    </button>
-                  </div>
-                  <div class="story-type">
-                    <button class="btn-my-mind">
-                      <a href="#" class="link-my-mind">
-                        <i></i>
-                        <p>Photo/video</p>
-                      </a>
-                    </button>
-                  </div>
-                  <div class="story-type">
-                    <button class="btn-my-mind">
-                      <a href="#" class="link-my-mind">
-                        <i></i>
-                        <p>Feeling/activity</p>
-                      </a>
-                    </button>
-                  </div>
+                <div my-mind>
+                  <input
+                    type="text"
+                    placeholder="What is on your mind, user?"
+                    class="my-mind-input"
+                  />
                 </div>
               </div>
-            </section>
-            <section>
-              <div class="newsfeed-posts">
-                <!-- <div class="newsfeed-container">
+              <hr />
+              <div class="myStoryTypes">
+                <div class="story-type">
+                  <button class="btn-my-mind">
+                    <a href="#" class="link-my-mind">
+                      <i></i>
+                      <p>Live video</p>
+                    </a>
+                  </button>
+                </div>
+                <div class="story-type">
+                  <button class="btn-my-mind">
+                    <a href="#" class="link-my-mind">
+                      <i></i>
+                      <p>Photo/video</p>
+                    </a>
+                  </button>
+                </div>
+                <div class="story-type">
+                  <button class="btn-my-mind">
+                    <a href="#" class="link-my-mind">
+                      <i></i>
+                      <p>Feeling/activity</p>
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="newsfeed-posts">
+              <!-- <div class="newsfeed-container">
                   <section class="newsfeed-section">
                       <div class="news-head-wrap">
                         <div>
@@ -332,9 +311,8 @@
                     </div>
                   </section>
                 </div> -->
-              </div>
-            </section>
-          </div>
+            </div>
+          </section>
         </div>
         <!--  Contacts 
         and birthdays with messengers and online users
@@ -383,6 +361,6 @@
         </div>
       </div>
     </section>
-    <script type="module" src="app.js" ></script>
+    <script type="module" src="app.js"></script>
   </body>
 </html>

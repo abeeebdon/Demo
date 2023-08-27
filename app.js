@@ -1,14 +1,14 @@
-import sideBar from "./face-book.js"
-import status from "./status.js";
-import onlineUsers from "./onlineContact.js"
-import nf from "./newsFeed.js"
+import sideBar from './face-book.js'
+import status from './status.js'
+import onlineUsers from './onlineContact.js'
+import nf from './newsFeed.js'
 
 // the next array loop into the aside on the user interface
 sideBar.map((sides) => {
-  const { name, icon } = sides;
-  const fb_sideBars = document.createElement("div");
-  const asideElement = document.querySelector(".aside-elements");
-  asideElement.appendChild(fb_sideBars);
+  const { name, icon } = sides
+  const fb_sideBars = document.createElement('div')
+  const asideElement = document.querySelector('.aside-elements')
+  asideElement.appendChild(fb_sideBars)
   fb_sideBars.innerHTML = `<div class="aside-menu" id="friends">
                   <div class="flex-1">
                     <div class="icon-wrapper-aside">
@@ -18,19 +18,18 @@ sideBar.map((sides) => {
                   <div class="flex-2">
                     <p class="aside-paragraph">${name}</p>
                   </div>
-                </div>`;
-});
+                </div>`
+})
 
-
-// outputing newsfeed 
+// outputing newsfeed
 
 // the array for the newsfeed will be imported from newsFeed.js
-nf.map((newsFeed)=>{
-    const {index, username, user, imgsrc, src}= newsFeed;
-    const news= document.querySelector(".newsfeed-posts")
-    const statuss=document.createElement("div");
-    news.appendChild(statuss)
-    statuss.innerHTML=`<div class="newsfeed-container">
+nf.map((newsFeed) => {
+  const { index, username, user, imgsrc, src } = newsFeed
+  const news = document.querySelector('.newsfeed-posts')
+  const statuss = document.createElement('div')
+  news.appendChild(statuss)
+  statuss.innerHTML = `<div class="newsfeed-container">
     <section class="newsfeed-section">
         <div class="news-head-wrap">
           <div>
@@ -49,7 +48,7 @@ nf.map((newsFeed)=>{
           </div>
           <div class="news-icon">
             <span class="fa-solid fa-ellipsis"></span>
-            <span class="fa-solid fa-cross"></span>
+            <span class="cross">&times</span>
           </div>
       </div>
     </section>
@@ -96,15 +95,14 @@ nf.map((newsFeed)=>{
       </div>
     </section>
   </div>`
-  
 })
 
 status.map((stat) => {
-  const {src, link}=stat;
-  const statusHolder= document.querySelector(".story-videos-list")
-  const statuss=document.createElement("div");
+  const { src, link } = stat
+  const statusHolder = document.querySelector('.story-videos-list')
+  const statuss = document.createElement('div')
   statusHolder.appendChild(statuss)
-  statuss.innerHTML=`<div class="story-video-container">
+  statuss.innerHTML = `<div class="story-video-container">
                       <div class="story-videos">
                         <a href="${link}">
                           <img
@@ -116,11 +114,11 @@ status.map((stat) => {
                     </div>`
 })
 onlineUsers.map((online) => {
-  const {username, src}= online;
-  const statusHolder= document.querySelector(".online-contacts")
-  const statuss=document.createElement("div");
+  const { username, src } = online
+  const statusHolder = document.querySelector('.online-contacts')
+  const statuss = document.createElement('div')
   statusHolder.appendChild(statuss)
-  statuss.innerHTML=`<div class="online-contacts-wrapper">
+  statuss.innerHTML = `<div class="online-contacts-wrapper">
   <img
     src="${src}"
     width="45px"
@@ -131,4 +129,3 @@ onlineUsers.map((online) => {
   <p class="online-user">${username}</p>
 </div>`
 })
-
